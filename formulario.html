@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-formulario.css">
     <link rel="icon" href="img/logo.webp">
     <title>Viajes Garcia</title>
@@ -28,9 +29,45 @@
     </header>
 
     <main>
-        <div id="contenedor">
+        <form action="mailto:soporte@viajesgarcia.es" method="post" name="Formulario Tarea3" class="formul">
+            <fieldset class="f1">
+                <legend>Datos Personales</legend>
+                <br>
+                Nombre y Apellidos:
+                <br><input type="text" name="name" id="" placeholder="Indica tu nombre" required>
+                <br>
+                Email:
+                <br>
+                <input type="text" name="email" id="" placeholder="Correo eléctronico" required>
 
-        </div>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset class="f2">
+                <legend>Mensaje</legend>
+                <br>
+                Selecciona tu consulta:
+                <input list="desplegable">
+                <datalist id="desplegable">
+                    <option value="Reservas"></option>
+                    <option value="Problemas"></option>
+                    <option value="Agendar Cita"></option>
+                </datalist>
+                <br>
+                <br>Danos mas detalles<br><textarea name="detalles" id="" cols="70" rows="20" minlength="5"
+                    maxlength="25" placeholder="Escribe aqui lo que te gusta de nuestra web y lo que mejorarías"></textarea>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset class="f3">
+                <legend>Acciones de usuario</legend>
+                <br>
+                Borrar: <input type="reset" value="Eliminar todos los datos" class="reset">
+                <br>
+                <br>
+                Enviar: <input type="submit" value="Enviar formulario" class="submit">
+            </fieldset>
+        </form>
     </main>
 
     <footer>

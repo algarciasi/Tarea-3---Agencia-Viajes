@@ -6,76 +6,70 @@ body {
     background-color: #ccc;
 }
 
-/* Barra de navegación */
-.navbar {
-    background-color: #333;
-    padding: 10px 0;
-}
-
-.nav-container {
+/* Contenedor principal */
+main {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    min-height: 80vh; 
+
+/* Formulario centrado */
+.formul {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin: 20px auto;
+    box-sizing: border-box;
 }
 
-/* Logo y título */
-.logo-container {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    margin-left: 20px;
+fieldset {
+    border: 1px solid #999;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.logo {
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-}
-
-.titulo {
-    color: white;
-    font-size: 20px;
+legend {
     font-weight: bold;
-}
-
-/* Menú de navegación */
-
-nav {
-    flex-grow: 2;
-    display: flex;
-    justify-content: center;
-}
-
-.navi {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.navi li {
-    margin: 0 15px;
-}
-
-.navi a {
-    text-decoration: none;
-    color: white;
     font-size: 16px;
-    font-weight: bold;
-    transition: color 0.3s;
 }
 
-.navi a:hover {
-    color: #0055ff;
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
 }
 
-footer {
+/* Ajuste especial para el datalist */
+input[list] {
+    width: calc(100% - 5px);
+}
+
+/* Botones */
+.reset, .submit {
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.reset:hover {
+    background-color: red;
+}
+
+.submit:hover {
+    background-color: green;
 }
